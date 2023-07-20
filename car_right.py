@@ -15,7 +15,7 @@ curses.cbreak()
 screen.keypad(True)
 pkill -f car_forward.py
 pkill -f car_back.py
-pkill -f car_right.py
+pkill -f car_left.py
 pkill -f car_halt.py
 
 try:
