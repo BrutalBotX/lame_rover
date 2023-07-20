@@ -14,6 +14,10 @@ screen.keypad(True)
 
 try:
         while True:   
+            char = screen.getch()
+            if char == ord('q'):
+                break
+            elif char == curses.KEY_UP:
                 GPIO.output(7,False)
                 GPIO.output(11,True)
                 GPIO.output(38,False)
@@ -44,4 +48,3 @@ finally:
     curses.endwin()
     GPIO.cleanup()
     
-
